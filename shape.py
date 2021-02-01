@@ -59,7 +59,7 @@ cross((pw - m*2), (ph - m*2))
 db.stroke(None)
 db.fill(0)
 db.font("Plantin MT Pro", 11)
-db.text("Une forme molle rouge dessinée à partir de trois points", (m*2, m*3))
+db.text("Une forme molle dessinée à partir de trois points.", (m*2, m*3))
 
 
 db.translate(pw/2, ph/2)

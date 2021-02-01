@@ -18,7 +18,7 @@ wdt = 120
 h = ph/5
 w = pw/2
 
-path = '9ad1c366-6224-11eb-896c-e46f13f48499.jpg'
+path = 'a27d950c-6226-11eb-896c-e46f13f48499.jpg'
 
 db.size(pw, ph)
 
@@ -50,7 +50,7 @@ db.image('image.jpg', (fw, fh))
 db.stroke(None)
 db.fill(0)
 db.font("Plantin MT Pro", 11)
-db.text("Une image composée des canaux RVB issus de trois images différentes", (m*2, m*3))
+db.text("Une image, composée des canaux RVB de trois autres images.", (m*2, m*3))
 
 # croix
 cross(m, m)

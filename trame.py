@@ -68,7 +68,7 @@ cross((pw - m*2), (ph - m*2))
 
 # text
 db.font("Plantin MT Pro", 11)
-db.text("Deux cercles bleus, composés de trente six lignes concentriques, superposés ", (m*2, m*3))
+db.text("Trente six lignes concentriques.", (m*2, m*3))
 
 db.saveImage(str(name) + '.jpg')
 db.saveImage(str(name) + '.pdf')

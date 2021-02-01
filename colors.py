@@ -50,7 +50,7 @@ def grid(xt, yt, nR):
 
 # text
 db.font("Plantin MT Pro", 11)
-db.text("Soixante-quatre carrées alignés avec un dégradé", (m*2, m*3))
+db.text("Soixante-quatre carrées avec un dégradé.", (m*2, m*3))
 
 # croix
 cross(m, m)
