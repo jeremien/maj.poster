@@ -1,0 +1,7 @@
+This repository contains the work of Jérémie Nuel.
+
+All code written in python is licenced under the GNU General Public License as published by the Free Software Foundation.
+
+All texts and images are licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)- https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+You are free to copying, modified and re-use. Feel free to contact me at jeremie.nuel@pm.me.

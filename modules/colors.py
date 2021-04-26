@@ -43,14 +43,14 @@ def grid(xt, yt, nR):
       db.linearGradient(
       (0, 0),                         
       (0, 500),                        
-      [(1, 0, 0), (0, 1, 0), (0, 0, 1)],  
+      [(1, 0, 0), (0, 1, 0), (0, 0, 0)],  
       [0, .6, 1]                         
       )
       c_rect((x * cell_s + cell_s / 2, y * cell_s + cell_s/2), cell_s - u)
 
 # text
-db.font("Plantin MT Pro", 11)
-db.text("Soixante-quatre carrées avec un dégradé.", (m*2, m*3))
+db.font("Plantin MT Pro", 10)
+db.text("Soixante-quatre carrés dans un dégradé.", (m*2, m*3))
 
 # croix
 cross(m, m)
@@ -63,7 +63,7 @@ grid(m*6, m*10, 8)
 
 
 
-db.saveImage(str(name) + '.jpg')
-db.saveImage(str(name) + '.pdf')
-#db.saveImage(str(name) + '.svg')
+# db.saveImage(str(name) + '.jpg')
+# db.saveImage('colors_01022021.pdf')
+db.saveImage(str(name) + '.svg')
 

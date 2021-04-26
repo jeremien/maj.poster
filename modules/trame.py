@@ -30,7 +30,7 @@ db.size(pw, ph)
 def cross(x, y):
   with db.savedState():
     db.fill(None)
-    db.stroke(0, 0, 1)
+    db.stroke(0)
     db.strokeWidth(1)
     db.translate(x, y)
     # line vertical
@@ -45,7 +45,7 @@ def trame(x, y, s, n, w):
   step = r / n
   with db.savedState():
     db.fill(None)
-    db.stroke(0, 0, 1)
+    db.stroke(0)
     db.strokeWidth(s)
     db.translate(x, y)
     for i in range(n):
@@ -67,10 +67,10 @@ cross(m, (ph - m*2))
 cross((pw - m*2), (ph - m*2))
 
 # text
-db.font("Plantin MT Pro", 11)
-db.text("Trente six lignes concentriques.", (m*2, m*3))
+db.font("Plantin MT Pro", 10)
+db.text("Trente-six lignes concentriques.", (m*2, m*3))
 
-db.saveImage(str(name) + '.jpg')
-db.saveImage(str(name) + '.pdf')
-#db.saveImage(str(name) + '.svg')
+# db.saveImage(str(name) + '.jpg')
+#db.saveImage('trame_01022021.pdf')
+db.saveImage(str(name) + '.svg')
 

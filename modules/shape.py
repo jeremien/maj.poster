@@ -72,5 +72,6 @@ drawShape(pw * 0.5)
 # central cross
 cross(m, m)
 
-db.saveImage(str(name) + '.jpg')
-db.saveImage(str(name) + '.pdf')
+# db.saveImage(str(name) + '.jpg')
+# db.saveImage(str(name) + '.pdf')
+db.saveImage('shape_01022021.pdf')

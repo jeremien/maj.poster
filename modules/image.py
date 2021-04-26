@@ -34,9 +34,10 @@ def cross(x, y):
     db .line((0,u*2), (u*4,u*2))
 
 
-im = Image.open(path)
+im = Image.open(path).convert('RGB')
+im.save(path)
 w,h = im.size
-print(w, h)
+print(w, h, im.mode)
 im = im.resize((int(w/8), int(h/8)))
 w,h = im.size
 print(w, h)
@@ -49,7 +50,7 @@ db.image('img/image.jpg', (fw, fh))
 # text
 db.stroke(None)
 db.fill(0)
-db.font("Plantin MT Pro", 11)
+db.font("Plantin MT Pro", 10)
 db.text("Une image, composée des canaux RVB de trois autres images.", (m*2, m*3))
 
 # croix
@@ -58,6 +59,6 @@ cross((pw - m*2), m)
 cross(m, (ph - m*2))
 cross((pw - m*2), (ph - m*2))
 
-db.saveImage(str(name) + '.jpg')
-#db.saveImage(str(name) + '.svg')
-db.saveImage(str(name) + '.pdf')
+# db.saveImage(str(name) + '.jpg')
+db.saveImage(str(name) + '.svg')
+# db.saveImage(str(name) + '.pdf')
